@@ -20,4 +20,11 @@ public class Konto {
     public int getBalance() {
         return balance;
     }
+
+    public int depositMoney(int i){
+        if (i>0){
+            balance = balance + i;
+        }
+        return balance;
+    }
 }
