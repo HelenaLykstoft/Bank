@@ -27,4 +27,11 @@ public class Konto {
         }
         return balance;
     }
+
+    public int withdrawMoney(int i) {
+        if (i>0 && balance>=i){
+            balance = balance - i;
+        }
+        return balance;
+    }
 }
