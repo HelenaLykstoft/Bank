@@ -15,11 +15,20 @@ public class Menu {
             int choice = textUI.select("This is the menu.",choices,":)");
             switch (choice){
                 case 0:
+                    String[] accountChoice = {"Normal account", "Golden account"};
+                    int accountChoices = textUI.select(" ",accountChoice," ");
                     System.out.println("First enter name: ");
                     String name = textUI.get();
                     System.out.println("Enter amount of money you wish to insert: ");
                     int money = textUI.getInteger();
-                    System.out.println(bank.createAccount(new Account(name, money)));
+                    switch (accountChoices){
+                        case 0:
+                            System.out.println(bank.createAccount(new Account(name, money)));
+                            break;
+                        case 1:
+                            System.out.println(bank.createAccount(new GoldenAccount(name, money)));
+                            break;
+                    }
                     break;
                 case 1:
                     System.out.println("Please enter name: ");
@@ -28,14 +37,18 @@ public class Menu {
                 case 2:
                     System.out.println("Choose an account: ");
                     Account account = bank.getAccount(textUI.get());
-                    System.out.println("How much would you like to withdraw?");
-                    account.withdrawMoney(textUI.getInteger());
+                    if (account != null) {
+                        System.out.println("How much would you like to withdraw?");
+                        account.withdrawMoney(textUI.getInteger());
+                    }
                     break;
                 case 3:
                     System.out.println("Choose an account: ");
                     Account account1 = bank.getAccount(textUI.get());
-                    System.out.println("How much would you like to deposit?");
-                    account1.depositMoney(textUI.getInteger());
+                    if (account1 != null) {
+                        System.out.println("How much would you like to deposit?");
+                        account1.depositMoney(textUI.getInteger());
+                    }
                     break;
                 case 4:
                     break;

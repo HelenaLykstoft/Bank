@@ -1,8 +1,8 @@
 public class Account {
 
-    private String Conflict;
-    private String name;
-    private int balance;
+    protected String Conflict;
+    protected String name;
+    protected int balance;
 
     public Account(String name, int balance) {
         this.name = name;
@@ -36,7 +36,7 @@ public class Account {
         System.out.println("Balance before withdrawel: " + this.balance);
         if (i>0 && balance>=i){
             balance = balance - i;
-        }
+        } else System.out.println("You cant withdraw more money than you got.");
         System.out.println("Balance after withdrawel: " + this.balance);
         return balance;
     }
