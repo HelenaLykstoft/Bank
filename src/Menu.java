@@ -8,15 +8,22 @@ public class Menu {
     public void mainMenu(){
         boolean isOn = true;
         String[] choices = {"Add account","Delete account","Withdraw","Deposit","See transactions","quit"};
-        int choice = textUI.select("This is the menu.",choices,":)");
+
 
 
         while (isOn){
+            int choice = textUI.select("This is the menu.",choices,":)");
             switch (choice){
                 case 0:
-                    bank.createAccount(new Account(textUI.get(), textUI.getInteger()));
+                    System.out.println("First enter name: ");
+                    String name = textUI.get();
+                    System.out.println("Enter amount of money you wish to insert: ");
+                    int money = textUI.getInteger();
+                    System.out.println(bank.createAccount(new Account(name, money)));
                     break;
                 case 1:
+                    System.out.println("Please enter name: ");
+                    System.out.println(bank.deleteAccount(textUI.get()));
                     break;
                 case 2:
                     break;
