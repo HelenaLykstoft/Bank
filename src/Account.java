@@ -1,4 +1,6 @@
 public class Account {
+
+    private String Conflict;
     private String name;
     private int balance;
 
@@ -34,4 +36,5 @@ public class Account {
         }
         return balance;
     }
+
 }
