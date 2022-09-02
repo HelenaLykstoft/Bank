@@ -1,8 +1,8 @@
 1.	det skal være muligt at anvende 3 forskellige sprog efter eget valg.
-2.	Man skal kunne oprettet nye konti i banken.
-3.	Man skal kunne nedlægge konti.
-4.	Man kunne hæve fra en konto.
-5.	Man skal kunne indsætte på en konto.
+2.	Man skal kunne oprettet nye konti i banken. check
+3.	Man skal kunne nedlægge konti. check
+4.	Man kunne hæve fra en konto. check
+5.	Man skal kunne indsætte på en konto. check
 6.	Lad en guldkonto med bevilliget overtræk. Der skal angives en grænse. Men eller skal den selvfølgelig fungere som en normal konto,
 7.	Se om du kan overføre beløb mellem to konti.
 8.	Måske vil det være interessant at lave have en liste i hver kontoen, over alle dens transaktioner.
