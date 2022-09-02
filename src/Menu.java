@@ -26,8 +26,16 @@ public class Menu {
                     System.out.println(bank.deleteAccount(textUI.get()));
                     break;
                 case 2:
+                    System.out.println("Choose an account: ");
+                    Account account = bank.getAccount(textUI.get());
+                    System.out.println("How much would you like to withdraw?");
+                    account.withdrawMoney(textUI.getInteger());
                     break;
                 case 3:
+                    System.out.println("Choose an account: ");
+                    Account account1 = bank.getAccount(textUI.get());
+                    System.out.println("How much would you like to deposit?");
+                    account1.depositMoney(textUI.getInteger());
                     break;
                 case 4:
                     break;

@@ -22,4 +22,12 @@ public class Bank {
         }
         return "The account does not exist";
     }
+
+    public Account getAccount(String key){
+        if (accountMap.containsKey(key)) {
+            return accountMap.get(key);
+        }
+        System.out.println("The account doesnt exist.");
+        return null;
+    }
 }

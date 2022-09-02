@@ -24,16 +24,20 @@ public class Account {
     }
 
     public int depositMoney(int i){
+        System.out.println("Balance before deposit: " + this.balance);
         if (i>0){
             balance = balance + i;
         }
+        System.out.println("Balance after deposit: " + this.balance);
         return balance;
     }
 
     public int withdrawMoney(int i) {
+        System.out.println("Balance before withdrawel: " + this.balance);
         if (i>0 && balance>=i){
             balance = balance - i;
         }
+        System.out.println("Balance after withdrawel: " + this.balance);
         return balance;
     }
 
