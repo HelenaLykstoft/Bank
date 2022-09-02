@@ -1,0 +1,16 @@
+1.	det skal være muligt at anvende 3 forskellige sprog efter eget valg.
+2.	Man skal kunne oprettet nye konti i banken.
+3.	Man skal kunne nedlægge konti.
+4.	Man kunne hæve fra en konto.
+5.	Man skal kunne indsætte på en konto.
+6.	Lad en guldkonto med bevilliget overtræk. Der skal angives en grænse. Men eller skal den selvfølgelig fungere som en normal konto,
+7.	Se om du kan overføre beløb mellem to konti.
+8.	Måske vil det være interessant at lave have en liste i hver kontoen, over alle dens transaktioner.
+9.	Det kunne være interessant at kunne filtrere på transaktionerne, så man f.eks. kan se alle over et givet beløb.
+10.	Måske banken også skal have en sådan samlet liste over alle transaktioner ?
+11.	lav en funktion der returnere en liste med alle kundenavne
+12.	lav et filter som kan finde alle kunderne  med end f.eks. 200 kr på, og returner det som en liste.
+13.	lavet et filter som finder alle navnene på dem  med mindre en f.eks. 9 kr, og returner det som en liste.
+14.	prøver at arbejde med to banker, og se om du kan flytte kunder over fra en bank til en anden.
+15.	se om du kan flytte beløber mellem kunder for forskellige banker.
+16.	se om du kan flytte alle fattigrøvende over til den ene af bankerne.
